@@ -1,0 +1,148 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" type="text/css" href="main.css" media="screen" />
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+<title>CS112 / About Me</title>
+</head>
+
+<body>
+<div id="logo"> </div>
+<div class="logoTitle"> ABOUT <span>ME</span> </div>
+<div id="nav">
+  <button class="linkOne" role="button" onclick="window.location.href='index.html';" >Landing </button>
+  <button class="linkTwo" role="button" onclick="window.location.href='myblog.html';" >My Blog</button>
+  <button class="linkTwo" role="button" onclick="window.location.href='contacMe.html';" >ContactMe</button>
+</div>
+<div id="header">
+  <div class="blogHeader"> My name is Adrian Hernandez I am an inmigrant from Mexico City and an undergraduated student at Los Angeles Southwest College & the University of Southern California, I am persuing a bachelor's degree in computer science and engineering.
+    
+    I have prior experience in management, and over 20 years of experience in design, manufacture and installation of architectural signage. </div>
+</div>
+<div id="side-bar">
+  <div id="profilePic"></div>
+  <div class="profile"> Hi, my name is Adrian Hernandez, I am an undergraduate student at Los Angeles Southwest College and The University of Southern California. </div>
+</div>
+<div id="blogWrapper">
+  <p>Get to know me</p>
+  <a>These are pictures of the colleges and universities that I have attended.</a>
+  <div class="carouselOne mySlides fade"><img class="image" src="img/325402540_577162037273836_5910670237303296317_n.jpg" alt="East LA College"></div>
+  <div class="carouselOne mySlides fade"><img class="image" src="img/326118591_678089654007114_9118248669830673087_n.jpg" alt="East LA College"></div>
+  <div class="carouselOne mySlides fade"><img class="image" src="img/Tommy Trojan.jpg" alt="University of Souther California"></div>
+  <a class="prev" onclick="plusSlides(-1)">❮</a> <a class="next" onclick="plusSlides(1)">❯</a>
+  <div class="dots" > <span class="dot" onclick="currentSlide(1)"></span> <span class="dot" onclick="currentSlide(2)"></span> <span class="dot" onclick="currentSlide(3)"></span> </div>
+  <div class="containerDescription">The personal pictures above are a sample of the effort and dedication that I have put in my education so I can reach my educational goals. </div>
+</div>
+<div id="footer"></div>
+<div id="credits"></div>
+<<div class="name">Copyright&copy; 2022 Adrian Hernandez. All rights reserved</div>
+
+<!--script>
+
+		// script to manually move the carousel
+
+let slideIndex = 1;
+
+showSlides(slideIndex);
+
+
+
+function plusSlides(n) {
+
+  showSlides(slideIndex += n);
+
+}
+
+
+
+function currentSlide(n) {
+
+  showSlides(slideIndex = n);
+
+}
+
+
+
+function showSlides(n) {
+
+  let i;
+
+  let slides = document.getElementsByClassName("mySlides");
+
+  let dots = document.getElementsByClassName("dot");
+
+  if (n > slides.length) {slideIndex = 1}    
+
+  if (n < 1) {slideIndex = slides.length}
+
+  for (i = 0; i < slides.length; i++) {
+
+    slides[i].style.display = "none";  
+
+  }
+
+  for (i = 0; i < dots.length; i++) {
+
+    dots[i].className = dots[i].className.replace(" active", "");
+
+  }
+
+  slides[slideIndex-1].style.display = "block";  
+
+  dots[slideIndex-1].className += " active";
+
+}
+
+</script--> 
+
+<script>
+
+		// Automatic carousel
+
+let slideIndex = 0;
+
+showSlides();
+
+
+
+function showSlides() {
+
+  let i;
+
+  let slides = document.getElementsByClassName("mySlides");
+
+  let dots = document.getElementsByClassName("dot");
+
+  for (i = 0; i < slides.length; i++) {
+
+    slides[i].style.display = "none";  
+
+  }
+
+  slideIndex++;
+
+  if (slideIndex > slides.length) {slideIndex = 1}    
+
+  for (i = 0; i < dots.length; i++) {
+
+    dots[i].className = dots[i].className.replace(" active", "");
+
+  }
+
+  slides[slideIndex-1].style.display = "block";  
+
+  dots[slideIndex-1].className += " active";
+
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+
+}
+
+</script>
+</body>
+</html>

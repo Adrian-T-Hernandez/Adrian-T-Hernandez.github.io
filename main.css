@@ -1,0 +1,682 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 245px) 2fr;
+  /*grid-template-rows: 150px 100px 60px 200px 800px 100px 100px;*/
+  grid-template-rows: 1fr 1.25fr .8fr 2fr 8fr .5fr 0.5fr 1fr;
+  max-height: 100%;
+  font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+  gap: 5px;
+  width: 99vw;
+  height: 100vh;
+  background-color: floralwhite;
+  padding-right: 10px;
+}
+#wrapperLanding {
+  grid-column: 2 / 6;
+  grid-row: 2 / 8;
+  background-color: #00415a; /* <================================= CODE USED TO COLOR THE BACKGROUND ===============================> */
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.right {
+  grid-column: 4 / 6;
+  grid-row: 2 / 8;
+  background-color: #001f2b;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+#logo {
+  grid-column: 2 / 6;
+  grid-row: 2/3;
+  /*background-color: #A06A7F; /* <================================= CODE USED TO COLOR THE BACKGROUND ===============================> */
+  /*padding-left: 2%; /* <================================= COMMENT ===============================> */
+  /*line-height: 50px;  /* <================================= COMMENT ===============================> */
+  background-color: #00415a; /* <================================= CODE USED TO COLOR THE BACKGROUND ===============================> */
+}
+.logoTitle {
+  grid-column: 2 / 6;
+  grid-row: 2 / 3;
+  font-family: Segoe, "Segoe UI ", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+  font-weight: bold;
+  font-size: 2em;
+  color: darkgray;
+  padding-left: 1em;
+  margin: auto 0; /* <================================= Helps to center the text from top to bottom ===============================> */
+  text-align: left;
+}
+#imgLeft {
+  grid-column: 2 / 4;
+  grid-row: 2 / 6;
+  background-image: url("img/imgOne.png");
+  background-size: 25em;
+  background-repeat: no-repeat;
+}
+#imgRight {
+  grid-column: 4 / 6;
+  grid-row: 3 / 8;
+  background-image: url("img/B landing.png");
+  background-size: 25em;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  height: auto;
+  max-width: 100%;
+}
+span {
+  color: #D96846;
+}
+#nav {
+  grid-column: 2 / 6;
+  grid-row: 3/4;
+  background-color: #1A2A44; /* <================================= CODE USED TO COLOR THE BACKGROUND ===============================> */
+  font-family: Segoe, "Segoe UI ", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+  font-weight: bold;
+  font-size: 0.8em;
+  display: flex; /* <=============== This is a flexbox condition that allows me to place the buttons next to each other ==================>*/
+  flex-direction: row; /* <=============== This is a flexbox condition that allows me to place the buttons next to each other ==================>*/
+}
+.linkOne {
+  align-items: center; /* <=========================== This is a flexbox style button Centers from top to bottom =======================>*/
+  justify-content: center; /* <=========================== This is a flexbox style button centers from left to right =======================>*/
+  margin: auto 7.5px auto 15px;
+  width: 6.5em;
+  height: 20px;
+  cursor: pointer;
+  border-radius: 15px;
+  background: rgb(201, 82, 45);
+  background: linear-gradient(0deg, rgba(201, 82, 45, 0.9081757703081232) 7%, rgba(240, 98, 54, 1) 100%);
+  border: none;
+  grid-column: 2/3;
+  font-family: Segoe, "Segoe UI ", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+  font-weight: bold;
+  font-size: 1em;
+  color: white;
+  box-shadow: 0 0.7em 1.5em -0.6em white;
+  letter-spacing: 0.05em;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.linkOne:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em darkgrey;
+}
+.linkOne:active {
+  box-shadow: 0 0.3em 1em -0.5em darkgrey
+}
+.linkTwo {
+  align-items: center; /* <=========================== This is a flexbox style button Centers from top to bottom =======================>*/
+  justify-content: center; /* <=========================== This is a flexbox style button centers from left to right =======================>*/
+  margin: auto 6.5px;
+  width: 6.5em;
+  height: 20px;
+  cursor: pointer;
+  border-radius: 15px;
+  background: rgb(201, 82, 45);
+  background: linear-gradient(0deg, rgba(201, 82, 45, 0.9081757703081232) 7%, rgba(240, 98, 54, 1) 100%);
+  border: none;
+  grid-column: 2/3;
+  font-family: Segoe, "Segoe UI ", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+  font-weight: bold;
+  font-size: 1em;
+  color: white;
+  box-shadow: 0 0.7em 1.5em -0.6em white;
+  letter-spacing: 0.05em;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.linkTwo:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em darkgrey;
+}
+.linkTwo:active {
+  box-shadow: 0 0.3em 1em -0.5em darkgrey;
+}
+#header {
+  grid-column: 3 / 6;
+  grid-row: 4/5;
+  background-color: #00415a; /* <================================= CODE USED TO COLOR THE BACKGROUND ===============================> */
+  display: flex; /* <=============== This display have to be declared in the parent and all the children  ==================>*/
+  color: white;
+	flex-direction: row; /* <=============== This is a flexbox condition that allows me to place the buttons next to each other ==================>*/
+}
+.blogHeader {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-size: .9em;
+  font-style: italic;
+  font-weight: 500;
+  margin: 20px;
+  line-height: 14pt;
+	  flex-direction: row; /* <=============== This is a flexbox condition that allows me to place the buttons next to each other ==================>*/
+	justify-content: center;
+}
+.phone{
+	
+	
+	text-align: left;
+	align-items: flex-end;
+	margin: auto;
+	padding: 0px 25px 0px 50px;
+	
+	
+}
+
+.email {
+	
+	
+	text-align: right;
+	align-content: flex-end;
+    margin: auto; 
+		padding: 0px 50px 0px 25px;
+	
+}
+
+
+
+
+
+#blogWrapper {
+  grid-column: 3/6;
+  grid-row: 5/6;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr) .75fr 1fr;
+  /*background-color: #00415a;*/
+}
+p {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  font-family: Arial;
+  font-weight: bold;
+  padding: 1em 0 0 1em;
+  color: black;
+}
+a {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  font-family: Arial;
+  color: black;
+  padding: 3em 0 0em 1em;
+}
+#blogContainer {
+  grid-column: 1/3;
+  grid-row: 2/7;
+  margin: 2.5em;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  /* Add the blur effect */
+  /*filter: blur(8px);
+  -webkit-filter: blur(8px);*/
+}
+#blogContainerPics {
+  grid-column: 1/3;
+  grid-row: 2/8;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  /* Add the blur effect */
+  /*filter: blur(8px);
+  -webkit-filter: blur(8px);*/
+}
+.bubblesButtons {
+  grid-column: 1/3;
+  grid-row: 7/8;
+  display: flex; /* <=============== This is a flexbox condition that allows me to place the buttons next to each other ==================>*/
+  flex-direction: row; /* <=============== This is a flexbox condition that allows me to place the buttons next to each other ==================>*/
+  justify-content: center;
+}
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 1em 1.5em 1em 3.5;
+}
+.containerDescription {
+  grid-column: 1/3;
+  grid-row: 8/9;
+  font-family: Arial;
+  color: black;
+  font-size: .9em;
+  font-weight: 600;
+  margin: 20px 20px;
+}
+#side-bar {
+  grid-column: 2 / 3;
+  grid-row: 4/6;
+  min-height: 400px;
+  background-color: #1A2A44; /* <================================= CODE USED TO COLOR THE BACKGROUND ===============================> */
+  line-height: 25px;
+}
+#profilePic {
+  background-image: url("img/about.jpg");
+  background-size: 180px;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  max-height: 100%;
+  height: 150px;
+  width: 150px;
+  border-radius: 90px;
+  display: block;
+  margin: 2em auto;
+  border: 10px solid #009bd6;
+}
+.profile {
+  margin: 20px 20px;
+  text-align: left;
+  font-size: 0.75em;
+  font-weight: bold;
+  line-height: 12pt;
+  color: white;
+}
+#Body-Area {
+  grid-column: 3 / 6;
+  grid-row: 5 / 6;
+  min-height: 400px;
+  background-color: #76C1D8; /* <================================= CODE USED TO COLOR THE BACKGROUND ===============================> */
+  line-height: 400px;
+  text-align: center;
+  /* background-image: url("img/background.jpeg"); /* <================================= CODE TO INSERT AND EDIT THE IMAGE BACKGROUND ===============================< */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; /* <================================= CODE TO INSERT AND EDIT THE IMAGE BACKGROUND ===============================< */
+}
+#footer {
+  grid-column: 2 / 6;
+  grid-row: 6/7;
+  min-height: 50px;
+  background-color: #D96846; /* <================================= CODE USED TO COLOR THE BACKGROUND ===============================> */
+  line-height: 50px;
+  text-align: center;
+  display: flex;
+}
+#credits {
+  grid-column: 2 / 6;
+  grid-row: 7/8;
+  min-height: 50px;
+  background-color: #1A2A44; /* <================================= CODE USED TO COLOR THE BACKGROUND ===============================> */
+  padding-left: 2%;
+}
+.name {
+  grid-column: 2 / 6;
+  grid-row: 6/7;
+  min-height: 50px;
+  font-size: 1em;
+  color: white;
+  text-align: center;
+  margin: auto 0; /* <================================= Helps to center the text from top to bottom ===============================> */
+  line-height: 50px;
+}
+#landingLogoWrapper {
+  grid-column: 2 / 6;
+  grid-row: 4 / 6;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  font-family: Segoe, "Segoe UI ", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+  font-weight: bold;
+  font-size: 2.5em;
+  color: darkgray;
+}
+.buttonLink {
+  grid-column: 2 / 4;
+  grid-row: 3 / 5;
+  color: white;
+  text-align: center;
+  margin: auto auto;
+}
+#welcome { /*<============================= WELCOME MSG ===============================>*/
+  grid-column: 1 / 5;
+  grid-row: 2 / 3;
+  font-size: 45px;
+  font-family: 'Raleway', sans-serif;
+  color: darkgrey;
+  text-align: center;
+  margin: 0 auto auto;
+}
+#mainLogo { /*<============================= CENTER "B" LOGO ===============================>*/
+  grid-column: 1 / 5;
+  grid-row: 2 / 4;
+  text-align: center;
+  color: darkgray;
+  font-size: 9vw;
+  font-family: Segoe, "Segoe UI ", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+  margin: auto auto;
+}
+/* CSS */
+.landingButton {
+  display: flex;
+  align-items: center;
+  font-family: Segoe, "Segoe UI ", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0.25em .8em;
+  color: white;
+  background: rgb(240, 98, 54);
+  background: linear-gradient(0deg, rgba(240, 98, 54, 1) 43%, rgba(217, 104, 70, 1) 89%);
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.6em darkgrey;
+  letter-spacing: 0.05em;
+  border-radius: 5em;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.landingButton:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em darkgrey;
+}
+.landingButton:active {
+  box-shadow: 0 0.3em 1em -0.5em darkgrey;
+}
+#blogContainer, #blogContainer:before, #blogContainer:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*body {  
+   
+  overflow: hidden; <================= center fix the display into an fixed image   
+} */
+.bubble {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: linear 2s, transform .2s;
+}
+.bubble:hover {
+  transform: scale(1.7);
+}
+.bubble--bust {
+  transform: scale(1.8);
+}
+.iframe {
+  grid-column: 1/3;
+  grid-row: 2/7;
+  margin: 2em;
+}
+/*               PICtures Carousel    */
+* {
+  box-sizing: border-box
+}
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0
+}
+.mySlides {
+  display: none
+}
+img {
+  vertical-align: middle;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* Next & previous buttons */
+.prev {
+  grid-column: 1/3;
+  grid-row: 5/6;
+  cursor: pointer;
+  margin: auto auto 0 0;
+  width: 25;
+  ;
+  padding: 16px;
+  color: #D96846;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  grid-column: 1/3;
+  grid-row: 5/6;
+  cursor: pointer;
+  margin: auto 0 0 auto;
+  width: 25;
+  ;
+  padding: 16px;
+  color: #D96846;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+.carouselOne {
+  grid-column: 1/3;
+  grid-row: 2/8;
+  max-height: 100em;
+}
+.image {
+  width: 758px;
+  max-width: 100%;
+  height: 425px;
+  overflow: hidden;
+}
+.dots {
+  grid-column: 1/3;
+  grid-row: 7/8;
+  text-align: center;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.cooming {
+  display: none;
+}
+@media (max-width: 430px) and (min-height:657px) {
+  body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    background-color: #00415a;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #00415a 0%, #00415a 50%, #001f2b 50%, #001f2b 100%);
+  }
+  #wrapperLanding {
+    grid-column: 1 / 3;
+    grid-row: 1/10;
+    /*background-color: #00415a; /* <================================= CODE USED TO COLOR THE BACKGROUND ===============================> */
+    display: none;
+  }
+  .logoTitle {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    font-family: Segoe, "Segoe UI ", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    font-weight: bold;
+    font-size: 10px;
+    color: darkgray;
+    display: none;
+    margin: auto 0; /* <================================= Helps to center the text from top to bottom ===============================> */
+    text-align: left;
+  }
+  #imgLeft {
+    grid-column: 1 / 2;
+    grid-row: 1/5;
+    background-image: url("img/imgOne.png");
+    background-size: 12em;
+    background-repeat: no-repeat;
+  }
+  #imgRight {
+    grid-column: 2 / 3;
+    grid-row: 9/11;
+    background-image: url("img/B landing.png");
+    background-size: 11em;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+  }
+  .right {
+    grid-column: 2 / 3;
+    grid-row: 1 / 10;
+    /*background-color: #001f2b;*/
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  #landingLogoWrapper {
+    grid-column: 1 / 3;
+    grid-row: 2 / 11;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    font-family: Segoe, "Segoe UI ", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    font-weight: bold;
+    font-size: 2.5em;
+    color: darkgray;
+  }
+  #footer {
+    grid-column: 1 / 3;
+    grid-row: 11/13;
+    background-color: #D96846; /* <================================= CODE USED TO COLOR THE BACKGROUND ===============================> */
+  }
+  .name {
+    grid-column: 1 / 3;
+    grid-row: 11/12;
+    max-height: 20px;
+    font-size: .8em;
+    color: white;
+    text-align: center;
+    margin: auto 0; /* <================================= Helps to center the text from top to bottom ===============================> */
+    line-height: 50px
+  }
+  .buttonLink {
+    grid-column: 2 / 4;
+    grid-row: 3 / 5;
+    color: white;
+    text-align: center;
+    margin: auto auto;
+    display: none;
+  }
+  #welcome { /*<============================= WELCOME MSG ===============================>*/
+    grid-column: 1 / 5;
+    grid-row: 2/ 3;
+    font-size: .75em;
+    font-family: 'Raleway', sans-serif;
+    color: darkgrey;
+    text-align: center;
+    margin: 0 auto auto;
+  }
+  #mainLogo { /*<============================= CENTER "B" LOGO ===============================>*/
+    grid-column: 1 / 5;
+    grid-row: 4/5;
+    text-align: center;
+    color: darkgray;
+    font-size: 20vw;
+    font-family: Segoe, "Segoe UI ", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    margin: auto 0 auto 0
+  }
+  .cooming {
+    grid-column: 1/5;
+    grid-row: 7/8;
+    font-size: .75em;
+    font-family: 'Raleway', sans-serif;
+    color: darkgrey;
+    text-align: center;
+    margin: auto 0;
+    display: inherit;
+  }
+}

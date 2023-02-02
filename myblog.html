@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" type="text/css" href="main.css" media="screen" />
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+<title>CS112 / My Blog</title>
+</head>
+
+<body>
+<div id="logo"> </div>
+<div class="logoTitle"> MY <span>BLOG</span> </div>
+<div id="nav">
+  <button class="linkOne" role="button" onclick="window.location.href='index.html';" >Landing </button>
+  <button class="linkTwo" role="button" onclick="window.location.href='aboutMe.html';" >About Me</button>
+  <button class="linkTwo" role="button" onclick="window.location.href='contacMe.html';" >ContactMe</button>
+</div>
+<div id="header">
+  <div class="blogHeader"> The purpose of myBlog is to create content based on my experiences as an undergraduate student, on it I will be posting pictures and samples of all my English courses essays and papers published by me, computer science programming and data research, and all the programs of my authorship created for aducational purposes and to confirm the data output of some of my calculus and physics exercises. </div>
+</div>
+<div id="side-bar">
+  <div id="profilePic"></div>
+  <div class="profile"> Hi, my name is Adrian Hernandez, I am an undergraduate student at Los Angeles Southwest College and The University of Southern California. </div>
+</div>
+<div id="blogWrapper">
+  <p>CS112 Programing JavaScript</p>
+  <a>JavaScript Event</a>
+  <div id="blogContainer">
+    <div id="myBubbles"></div>
+    <script>
+
+
+
+    function myBubbles() {
+
+
+
+      document.getElementById("myBubbles").innerHTML = "<iframe class=\"responsive-iframe\" src=\"bubbles.html\" ></iframe>";
+
+
+
+        }
+
+
+
+    </script> 
+  </div>
+  <div class="bubblesButtons">
+    <button class="linkOne" onclick="myBubbles()">Click me</button>
+  </div>
+  <div class="containerDescription"> The example above shows what a JavaScript event is and how data input or a button is needed to trigger such event. </div>
+</div>
+<div id="footer"></div>
+<div id="credits"></div>
+<div class="name">Copyright&copy; 2022 Adrian Hernandez. All rights reserved</div>
+</body>
+</html>
