@@ -1,17 +1,30 @@
-body {
-  overflow: hidden;
-  background: linear-gradient(to right, #00415a 0%, #00415a 50%, #001f2b 50%, #001f2b 100%); }
+@charset "utf-8";
 
+*,
+*:before,
+*:after {
+}
+
+body {
+  
+  overflow: hidden;
+  background: linear-gradient(to right, #00415a 0%, #00415a 50%, #001f2b 50%, #001f2b 100%);
+	
+}
 .bubble {
   position: absolute;
   top: 0;
   left: 0;
   border-radius: 50%;
   cursor: pointer;
-  transition: linear 2s, transform 0.2s; }
+  transition: linear 2s, transform 0.2s;
+}
 
 .bubble:hover {
-  transform: scale(1.7); }
+  transform: scale(1.7);
+}
 
 .bubble--bust {
-  transform: scale(1.8); }
+  transform: scale(1.8);
+}
+
