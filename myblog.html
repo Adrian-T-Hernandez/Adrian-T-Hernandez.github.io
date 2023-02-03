@@ -33,26 +33,25 @@
   <a>JavaScript Event</a>
   <div id="blogContainer">
     <div id="myBubbles"></div>
+      
     <script>
 
-
-
     function myBubbles() {
-
-
-
+        
       document.getElementById("myBubbles").innerHTML = "<iframe class=\"responsive-iframe\" src=\"bubbles.html\" ></iframe>";
 
-
-
         }
-
-
+        function myCarousel() {
+            
+             document.getElementById("myCarousel").innerHTML = "<iframe class=\"responsive-iframe\" src=\"carousel.html\" ></iframe>";
+            
+        }
 
     </script> 
   </div>
   <div class="bubblesButtons">
-    <button class="linkOne" onclick="myBubbles()">Click me</button>
+    <button class="linkOne" onclick="myBubbles()">Bubbles</button>
+      <button class="linkOne" onclick="myBubbles()">Carousel</button>
   </div>
   <div class="containerDescription"> The example above shows what a JavaScript event is and how data input or a button is needed to trigger such event. </div>
 </div>
