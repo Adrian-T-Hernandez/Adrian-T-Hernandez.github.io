@@ -19,7 +19,7 @@
   <button class="linkOne" role="button" onclick="window.location.href='index.html';" >Landing </button>
   <button class="linkTwo" role="button" onclick="window.location.href='aboutMe.html';" >About Me</button>
   <button class="linkTwo" role="button" onclick="window.location.href='contacMe.html';" >Contact Me</button>
-     <button class="linkTwo" role="button" onclick="window.location.href='exampleOne.html';" >Carousel</button>
+  <button class="linkTwo" role="button" onclick="window.location.href='exampleOne.html';" >Carousel</button>
 </div>
 <div id="header">
   <div class="blogHeader"> The purpose of myBlog is to create content based on my experiences as an undergraduate student, on it I will be posting pictures and samples of all my English courses essays and papers published by me, computer science programming and data research, and all the programs of my authorship created for aducational purposes and to confirm the data output of some of my calculus and physics exercises. </div>
@@ -33,37 +33,33 @@
   <a>JavaScript Event</a>
   <div id="blogContainer">
     <div id="myBubbles"></div>
-      <div id="myCarousel"></div>
-      
+    <div id="myCarousel"></div>
     <script>
 
     function myBubbles() {
         
       document.getElementById("myBubbles").innerHTML = "<iframe class=\"responsive-iframe\" src=\"bubbles.html\" ></iframe>";
-        document.getElementById("myCarousel").style.display = "none"; 
+        document.getElementById("myBubbles").style.visibility = "visible"; 
+        document.getElementById("myCarousel").style.visibility = "hidden"; 
 
         }
        
 
     </script> 
-      
-      <script>
+    <script>
           
         function myCarousel() {
             
              document.getElementById("myCarousel").innerHTML = "<iframe class=\"responsive-iframe\" src=\"carousel.html\" ></iframe>";
-             document.getElementById("myBubbles").style.display = "none"; 
+             document.getElementById("myCarousel").style.visibility = "visible"; 
+             document.getElementById("myBubbles").style.visibility = "hidden"; 
         }
 
     </script> 
-      
-      
-      
-      
   </div>
   <div class="bubblesButtons">
     <button class="linkOne" onclick="myBubbles()">Bubbles</button>
-      <button class="linkOne" onclick="myCarousel()" style="#MyBubbles display: none" >Carousel</button>
+    <button class="linkOne" onclick="myCarousel()" style="#MyBubbles display: none" >Carousel</button>
   </div>
   <div class="containerDescription"> The example above shows what a JavaScript event is and how data input or a button is needed to trigger such event. </div>
 </div>
