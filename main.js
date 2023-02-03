@@ -168,3 +168,43 @@ setInterval(function () {
   requestAnimationFrame(() => new Bubble());
 
 }, 500);
+
+
+
+
+
+
+
+
+
+
+  
+
+    function myBubbles() {
+        
+      document.getElementById("myBubbles").innerHTML = "<iframe class=\"responsive-iframe\" src=\"bubbles.html\" ></iframe>";
+        document.getElementById("myBubbles").style.visibility = "visible"; 
+        document.getElementById("myCarousel").style.visibility = "hidden"; 
+
+        }
+       
+
+   
+          
+        function myCarousel() {
+            
+             document.getElementById("myCarousel").innerHTML = "<iframe class=\"responsive-iframe\" src=\"carousel.html\" ></iframe>";
+             document.getElementById("myCarousel").style.visibility = "visible"; 
+             document.getElementById("myBubbles").style.visibility = "hidden"; 
+        }
+
+   
+
+
+
+
+
+
+
+
+
