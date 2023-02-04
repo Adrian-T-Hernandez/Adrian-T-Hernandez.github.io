@@ -191,12 +191,12 @@ function myCarousel() {
 
 function myCalculus() {
 
-  document.getElementById("myCalculus").innerHTML 
+  document.getElementById("myCalculus").innerHTML = "<iframe class=\"responsive-iframe\" src=\"myCalculus.html\" ></iframe>";
   document.getElementById("myCalculus").style.visibility = "visible";
   document.getElementById("myBubbles").style.visibility = "hidden";
   document.getElementById("myCarousel").style.visibility = "hidden"; 
-  document.getElementById("myBubbles").style.display = "none";
-  document.getElementById("myCarousel").style.display = "none"; 
+  //document.getElementById("myBubbles").style.display = "none";
+  //document.getElementById("myCarousel").style.display = "none"; 
     
 }
 
