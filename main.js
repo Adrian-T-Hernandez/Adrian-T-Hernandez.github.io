@@ -188,7 +188,6 @@ function myCarousel() {
   document.getElementById("myCalculus").style.visibility = "hidden";    
 }
 
-
 function myCalculus() {
 
   document.getElementById("myCalculus").innerHTML = "<iframe class=\"responsive-iframe\" src=\"myCalculus.html\" ></iframe>";
