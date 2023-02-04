@@ -566,6 +566,20 @@ img {
 .cooming {
   display: none;
 }
+
+
+#myCalculus {
+    
+    visibility: hidden;
+    grid-column: 1/3;
+    grid-row: 2/7;
+    padding: 1em 0 0 1em;
+    background-color: green;
+    
+}
+
+
+
 @media (max-width: 430px) and (min-height:657px) {
   body {
     display: grid;

@@ -170,35 +170,39 @@ setInterval(function () {
 }, 500);
 
 
+function myBubbles() {
+
+  document.getElementById("myBubbles").innerHTML = "<iframe class=\"responsive-iframe\" src=\"bubbles.html\" ></iframe>";
+  document.getElementById("myBubbles").style.visibility = "visible";
+  document.getElementById("myCarousel").style.visibility = "hidden";
+  document.getElementById("myCalculus").style.visibility = "hidden";    
+
+}
+
+
+function myCarousel() {
+
+  document.getElementById("myCarousel").innerHTML = "<iframe class=\"responsive-iframe\" src=\"carousel.html\" ></iframe>";
+  document.getElementById("myCarousel").style.visibility = "visible";
+  document.getElementById("myBubbles").style.visibility = "hidden";
+  document.getElementById("myCalculus").style.visibility = "hidden";    
+}
+
+
+function myCalculus() {
+
+  document.getElementById("myCalculus").innerHTML 
+  document.getElementById("myCalculus").style.visibility = "visible";
+  document.getElementById("myBubbles").style.visibility = "hidden";
+  document.getElementById("myCarousel").style.visibility = "hidden"; 
+  document.getElementById("myBubbles").style.display = "none";
+  document.getElementById("myCarousel").style.display = "none"; 
+    
+}
 
 
 
 
-
-
-
-
-  
-
-    function myBubbles() {
-        
-      document.getElementById("myBubbles").innerHTML = "<iframe class=\"responsive-iframe\" src=\"bubbles.html\" ></iframe>";
-        document.getElementById("myBubbles").style.visibility = "visible"; 
-        document.getElementById("myCarousel").style.visibility = "hidden"; 
-
-        }
-       
-
-   
-          
-        function myCarousel() {
-            
-             document.getElementById("myCarousel").innerHTML = "<iframe class=\"responsive-iframe\" src=\"carousel.html\" ></iframe>";
-             document.getElementById("myCarousel").style.visibility = "visible"; 
-             document.getElementById("myBubbles").style.visibility = "hidden"; 
-        }
-
-   
 
 
 
