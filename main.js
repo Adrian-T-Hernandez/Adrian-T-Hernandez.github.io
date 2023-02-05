@@ -1,173 +1,4 @@
-// JavaScript must be located at the end of the body to work
 
-
-const root = document.querySelector("#app");
-
-let {
-
-  innerHeight,
-
-  innerWidth
-
-} = window;
-
-
-console.log(innerHeight, innerWidth);
-
-if (innerHeight < 300) {
-
-  innerHeight = 350;
-
-}
-
-if (innerWidth < 300) {
-
-  innerWidth = 750;
-
-}
-
-
-class Bubble {
-
-  constructor() {
-
-    this.bubbleSpan = undefined;
-
-    this.handleNewBubble();
-
-    this.color = this.randomColor();
-
-
-    this.posY = this.randomNumber(innerHeight - 20, 20);
-
-    this.posX = this.randomNumber(innerWidth - 20, 20);
-
-
-    this.bubbleSpan.style.top = this.posY + "px";
-
-    this.bubbleSpan.style.left = this.posX + "px";
-
-
-    // setting height and width of the bubble
-
-    this.height = this.randomNumber(60, 20);
-
-    this.width = this.height;
-
-
-    this.bubbleEnd.call(this.bubbleSpan, this.randomNumber(8000, 2000));
-
-  }
-
-
-  // creates and appends a new bubble in the DOM
-
-  handleNewBubble() {
-
-    this.bubbleSpan = document.createElement("span");
-
-    this.bubbleSpan.classList.add("bubble");
-
-    root.append(this.bubbleSpan);
-
-    this.handlePosition();
-
-    this.bubbleSpan.addEventListener("click", this.bubbleEnd);
-
-  }
-
-
-  handlePosition() {
-
-    // positioning the bubble in different random X and Y
-
-    const randomY = this.randomNumber(60, -60);
-
-    const randomX = this.randomNumber(60, -60);
-
-
-    this.bubbleSpan.style.backgroundColor = this.color;
-
-    this.bubbleSpan.style.height = this.height + "px";
-
-    this.bubbleSpan.style.width = this.height + "px";
-
-
-    this.posY = this.randomNumber(innerHeight - 20, 20);
-
-    this.posX = this.randomNumber(innerWidth - 20, 20);
-
-
-    this.bubbleSpan.style.top = this.posY + "px";
-
-    this.bubbleSpan.style.left = this.posX + "px";
-
-
-    const randomSec = this.randomNumber(8000, 200);
-
-    setTimeout(this.handlePosition.bind(this), randomSec); // calling for re-position of bubble
-
-  }
-
-
-  randomNumber(max, min) {
-
-    return Math.floor(Math.random() * (max - min + 1) + min);
-
-  }
-
-
-  randomColor() {
-
-    return `rgba(
-
-        ${this.randomNumber(0, 255)},
-
-        ${this.randomNumber(0, 255)},
-
-        ${this.randomNumber(0, 255)}, 
-
-        ${this.randomNumber(0.1, 1)})`;
-
-  }
-
-
-  bubbleEnd(removingTime = 0) {
-
-    setTimeout(
-
-      () => {
-
-        requestAnimationFrame(() => this.classList.add("bubble--bust"));
-
-      },
-
-      removingTime === 0 ? removingTime : removingTime - 100
-
-    );
-
-
-    setTimeout(() => {
-
-      requestAnimationFrame(() => this.remove());
-
-      requestAnimationFrame(() => new Bubble());
-
-    }, removingTime);
-
-  }
-
-}
-
-
-// creating many bubble instance
-
-
-setInterval(function () {
-
-  requestAnimationFrame(() => new Bubble());
-
-}, 500);
 
 
 function myBubbles() {
@@ -175,7 +6,8 @@ function myBubbles() {
   document.getElementById("myBubbles").innerHTML = "<iframe class=\"responsive-iframe\" src=\"bubbles.html\" ></iframe>";
   document.getElementById("myBubbles").style.visibility = "visible";
   document.getElementById("myCarousel").style.visibility = "hidden";
-  document.getElementById("myCalculus").style.visibility = "hidden";    
+  document.getElementById("myCalculus").style.visibility = "hidden";
+
 
 }
 
@@ -185,29 +17,89 @@ function myCarousel() {
   document.getElementById("myCarousel").innerHTML = "<iframe class=\"responsive-iframe\" src=\"carousel.html\" ></iframe>";
   document.getElementById("myCarousel").style.visibility = "visible";
   document.getElementById("myBubbles").style.visibility = "hidden";
-  document.getElementById("myCalculus").style.visibility = "hidden";    
+  document.getElementById("myCalculus").style.visibility = "hidden";
+
 }
 
 function myCalculus() {
 
   document.getElementById("myCalculus").innerHTML = "<iframe class=\"responsive-iframe\" src=\"myCalculus.html\" ></iframe>";
   document.getElementById("myCalculus").style.visibility = "visible";
+  
   document.getElementById("myBubbles").style.visibility = "hidden";
-  document.getElementById("myCarousel").style.visibility = "hidden"; 
-  //document.getElementById("myBubbles").style.display = "none";
-  //document.getElementById("myCarousel").style.display = "none"; 
-    
+  document.getElementById("myCarousel").style.visibility = "hidden";
+
+  
 }
 
 
+function my3D() {
 
 
+  var P1;
+  var P2;
+  var P3;
+  var Q1;
+  var Q2;
+  var Q3;
+
+  P1 = parseInt(document.getElementById("P1").value);
+  P2 = parseInt(document.getElementById("P2").value);
+  P3 = parseInt(document.getElementById("P3").value);
+  Q1 = parseInt(document.getElementById("Q1").value);
+  Q2 = parseInt(document.getElementById("Q2").value);
+  Q3 = parseInt(document.getElementById("Q3").value);
+
+  //var a = Q1 - P1;
+  //var b = Q2 - P2;
+  //var c = Q3 - P3;
+
+  var a = Math.pow(Q1 - P1, 2);
+  var b = Math.pow(Q2 - P2, 2);
+  var c = Math.pow(Q3 - P3, 2);
 
 
+  var total = Math.sqrt(a + b + c);
+  //var total = P1;
+
+  document.getElementById("total").innerHTML = "The distance between the points PQ = " + total;
 
 
+  //document.getElementById("a").innerHTML = a; Support elements for testing data values
+  //document.getElementById("b").innerHTML = b;
+  //document.getElementById("c").innerHTML = c;
 
 
+}
 
 
+/*function myNumber() {
 
+
+  var P1;
+  let P2 = 0.0;
+  let P3 = 0.0;
+  let Q1 = 0.0;
+  let Q2 = 0.0;
+  let Q3 = 0.0;
+
+
+  P1 = parseInt(document.getElementById("P1").value);
+
+
+  var total = Math.sqrt(P1);
+
+  document.getElementById("total").innerHTML = total;
+
+
+}*/
+
+/*
+function add() {
+  var num1, num2, sum;
+  num1 = parseInt(document.getElementById("firstnumber").value);
+  num2 = parseInt(document.getElementById("secondnumber").value);
+  sum = num1 + num2;
+  document.getElementById("answer").value = sum;
+}
+*/
