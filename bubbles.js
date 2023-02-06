@@ -167,4 +167,4 @@ setInterval(function () {
 
   requestAnimationFrame(() => new Bubble());
 
-}, 500);// JavaScript Document
+}, 500); // JavaScript Document

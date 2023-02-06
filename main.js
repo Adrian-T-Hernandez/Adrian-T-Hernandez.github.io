@@ -1,6 +1,3 @@
-
-
-
 function myBubbles() {
 
   document.getElementById("myBubbles").innerHTML = "<iframe class=\"responsive-iframe\" src=\"bubbles.html\" ></iframe>";
@@ -8,9 +5,7 @@ function myBubbles() {
   document.getElementById("myCarousel").style.visibility = "hidden";
   document.getElementById("myCalculus").style.visibility = "hidden";
 
-
 }
-
 
 function myCarousel() {
 
@@ -25,16 +20,13 @@ function myCalculus() {
 
   document.getElementById("myCalculus").innerHTML = "<iframe class=\"responsive-iframe\" src=\"myCalculus.html\" ></iframe>";
   document.getElementById("myCalculus").style.visibility = "visible";
-  
   document.getElementById("myBubbles").style.visibility = "hidden";
   document.getElementById("myCarousel").style.visibility = "hidden";
 
-  
 }
 
 
 function my3D() {
-
 
   var P1;
   var P2;
@@ -72,7 +64,6 @@ function my3D() {
 
 }
 
-
 /*function myNumber() {
 
 
@@ -83,14 +74,11 @@ function my3D() {
   let Q2 = 0.0;
   let Q3 = 0.0;
 
-
   P1 = parseInt(document.getElementById("P1").value);
-
 
   var total = Math.sqrt(P1);
 
   document.getElementById("total").innerHTML = total;
-
 
 }*/
 
