@@ -1,155 +1,106 @@
 <!doctype html>
 
 <html>
-
 <head>
-
 <meta charset="utf-8">
-
 <link rel="stylesheet" type="text/css" href="main.css" media="screen" />
-
+<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
 <title>MyBlog / Example One</title>
-
 <style>
-
 @keyframes fader {
-
 from {
-
 opacity: 1.0;
-
 }
-
 to {
-
 opacity: 0.0;
-
 }
-
 }
-
 .fading-slideshow {
-
     grid-column: 2/6;
-
     grid-row: 4/6;
-
     background-color: white;
-
     position: relative;
-
     margin: 1em auto;
-
     padding: 0;
-
     list-style-type: none;
-
     width: 850px;
-
     height: auto;
-
 }
-
 .fading-slideshow > li {
-
     position: absolute;
-
     left: 0;
-
     top: 0;
-
     width: 100%;
-
     height: 100%;
-
     overflow: hidden;
-
     background-color: white;
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
 }
-
 /* current slide */
 
 
 
 .fading-slideshow > li:first-of-type {
-
     animation-name: fader;
-
     animation-delay: 2s;
-
     animation-duration: 2s;
-
     z-index: 20;
-
 }
-
 /* next slide to display */
 
 
 
 .fading-slideshow > li:nth-of-type(2) {
-
     z-index: 10;
-
 }
-
 /* all other slides */
 
 
 
 .fading-slideshow > li:nth-of-type(n+3) {
-
     display: none;
-
 }
-
 .pic {
-
     max-height: 1em;
-
     max-width: 2em;
-
 }
-
 </style>
-
 </head>
 
 <body>
-
 <div id="nav">
-
   <button class="linkOne" role="button" onclick="window.location.href='index.html';" >MyBlog</button>
-
-  <button class="linkTwo" role="button" onclick="window.location.href='bubbles.html';" >Bubbles</button> 
-
+  <button class="linkTwo" role="button" onclick="window.location.href='bubbles.html';" >Bubbles</button>
+  
   <!--button class="linkTwo" role="button" onclick="window.location.href='exampleOne.html';" >Slide Show</button--> 
-
+  
 </div>
-
 <ul class="fading-slideshow">
-
   <li><a href="img/img1.jpeg"><img src="img/img1.jpeg" style="max-height: 45m; max-width: 65em;" alt="img1"></a></li>
-
   <li><a href="img/img2.jpeg"><img src="img/img2.jpeg" style="max-height: 45m; max-width: 65em;" alt="img2"></a></li>
-
   <li><a href="img/img3.jpeg"><img src="img/img3.jpeg" style="max-height: 45m; max-width: 65em;" alt="img3"></a></li>
-
   <li><a href="img/img4.jpeg"><img src="img/img4.jpeg" style="max-height: 45m; max-width: 65em;" alt="img4"></a></li>
-
 </ul>
-
 <div id="footer"></div>
-
 <div class="name">Copyright&copy; Adrian Hernandez. All rights reserved</div>
-
 <script>
 
 
@@ -173,8 +124,5 @@ opacity: 0.0;
 
 
 </script>
-
 </body>
-
 </html>
-
